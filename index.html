@@ -3,138 +3,420 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Заголовок для сайта</title>
+		<title>B.ARS MEBEL - лучшие диваны для твоего комфорта</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="img/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="img/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="img/favicon/safari-pinned-tab.svg"
+			color="#000000"
+		/>
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
 
 		<link rel="stylesheet" href="index.css" />
+
+		<script src="js/modules/swiper.min.js" defer></script>
+		<script src="js/main.js" defer></script>
 	</head>
 
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<div class="header__wrap-logo">
-					<img class="header__logo" src="" alt="Логотип компании" />
-				</div>
+				<img
+					class="header__logo"
+					src="img/logo.svg"
+					alt="Логотип компании Барс Мебель"
+				/>
 
 				<nav class="header__navigation">
 					<ul class="header__list">
 						<li class="header__item">
-							<a href="#!" class="header__link">О нас</a>
+							<a href="#about" class="header__link">О нас</a>
 						</li>
 						<li class="header__item">
-							<a href="#!" class="header__link">Каталог</a>
+							<a href="#products" class="header__link">Каталог</a>
+						</li>
+						<!-- <li class="header__item">
+							<a href="#one" class="header__link">Pool</a>
 						</li>
 						<li class="header__item">
-							<a href="#!" class="header__link">Доставка</a>
+							<a href="#two" class="header__link">Loft Relax</a>
 						</li>
 						<li class="header__item">
-							<a href="#!" class="header__link">Контакты</a>
+							<a href="#three" class="header__link">Calipso</a>
+						</li>
+						<li class="header__item">
+							<a href="#four" class="header__link">Palermo</a>
+						</li> -->
+						<li class="header__item">
+							<a href="#contacts" class="header__link">Контакты</a>
+						</li>
+					</ul>
+					<ul class="header__list social">
+						<li class="social__item">
+							<a
+								href="https://instagram.com/bars_mebel_belarus?igshid=MW1id3pxZXA2eHZpZw=="
+								target="_blank"
+								class="social__link social__link_instagram"
+							>
+							</a>
+						</li>
+						<li class="social__item">
+							<a
+								href="https://www.tiktok.com/@bars_mebel_belarus"
+								target="_blank"
+								class="social__link social__link_tiktok"
+							>
+							</a>
 						</li>
 					</ul>
 				</nav>
-
-				<!-- <div class="header__social social">
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="#!" class="social__link">telegram</a>
-						</li>
-						<li class="social__item">
-							<a href="#!" class="social__link">instagram</a>
-						</li>
-						<li class="social__item">
-							<a href="#!" class="social__link">VK</a>
-						</li>
-					</ul>
-				</div> -->
 			</div>
 		</header>
 
 		<main class="main">
 			<section class="hero">
-				<div class="container hero__container">
+				<div class="hero__container">
 					<div class="hero__content">
-						<h1 class="hero__title">Заголовок сайта</h1>
-						<p class="hero_descr">Какой-то текст под главным заголовком</p>
-						<a href="#!" class="hero__link">Кнопка переход к обратной связи(Как назвать ее?)</a>
+						<h1 class="hero__title">
+							B.ARS MEBEL - лучшие диваны для твоего комфорта
+						</h1>
+						<p class="hero__descr">
+							Далеко-далеко за словесными горами в стране гласных и согласных
+							живут рыбные тексты. Осталось по всей напоивший, текстами встретил
+							составитель не злых прямо эта повстречался она вопрос большого
+							использовало дорогу последний продолжил журчит необходимыми.
+						</p>
+						<a href="#contacts" class="hero__link">Оставить заявку</a>
 					</div>
-					<video preload="auto" class="hero__video">
-						<source type="video/mp4" src="" />
+					<video autoplay loop muted played preload="auto" class="hero__video">
+						<source src="img/oldFile/herovideo.MOV" />
 					</video>
 				</div>
 			</section>
 
-			<section class="about">
-				<div class="container">
+			<section class="about" id="about">
+				<div class="container about__container">
 					<h2 class="about__title">О нашей компании</h2>
-					<p class="about__descr">Какой-то текст о нашей компании</p>
+					<p class="about__descr">
+						Компания Bars на рынке больше 10 лет. За это время мы прошли путь от
+						маленькой маленькой мастерской по реставрации мебели до большой
+						фабрики по производству мягкой мебели. На нашем пути было много
+						факторов, которые сейчас учли для изготовления лучшей, качественной
+						мебели по доступным для вас ценам.
+						<br />
+						<br />
+						Наши изделия можно приобрести в рассрочку Имеется два вида
+						рассрочки:
+						<br />
+						&nbsp;&nbsp;1)Внутренняя- предоплата 40% от стоимости заказа и оставшуюся
+						сумму делим на 2 либо же 3 платежа.
+						<br />
+						&nbsp;&nbsp;2)От банка. Рассрочка от 6 до 36 месяцев. Первые 6 месяцев
+						оплата без %, если не успели погасить рассрочку за 6 месяцев, то
+						переходит в обычный банковский кредит сроком до 36 месяцев, под
+						минимальный 13,3% годовых.
+					</p>
 				</div>
 			</section>
 
-			<section class="product">
+			<section class="products" id="products">
 				<div class="container">
-					<h2 class="product__title">Luxe Relax</h2>
+					<h2 class="products__title">Каталог</h2>
 
-					<p>тут добавится слайдер с основными товарами</p>
-					<div class="product__content">
-						<p>описание дивана</p>
+					<div class="product">
+						<h3 class="product__title">Loft Relax</h3>
+
+						<div class="product__wrap-swiper-content">
+							<div class="swiper product__swiper">
+								<div class="swiper-wrapper product__wiper-wrapper">
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/loftrelax1.jpg"
+											alt="Диван Loft Relax"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/loftrelax2.jpg"
+											alt="Диван Loft Relax"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/loftrelax3.jpg"
+											alt="Диван Loft Relax"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/loftrelax4.jpg"
+											alt="Диван Loft Relax"
+										/>
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination product__pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev product__swiper-button button-prev"
+								></div>
+								<div
+									class="swiper-button-next product__swiper-button button-next"
+								></div>
+							</div>
+						</div>
+
+						<div class="product__content">
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных
+								живут рыбные тексты. Составитель безопасную правилами большого
+								необходимыми? Парадигматическая, мир грустный курсивных ведущими
+								реторический, знаках инициал буквоград своих они вершину
+								осталось своего коварных?
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<h3 class="product__title">Calipso</h3>
+
+						<div class="product__wrap-swiper-content">
+							<div class="swiper product__swiper">
+								<div class="swiper-wrapper product__wiper-wrapper">
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/calipso1.jpg"
+											alt="Диван Calipso"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/calipso2.jpg"
+											alt="Диван Calipso"
+										/>
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination product__pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev product__swiper-button button-prev"
+								></div>
+								<div
+									class="swiper-button-next product__swiper-button button-next"
+								></div>
+							</div>
+						</div>
+
+						<div class="product__content">
+							<p>описание дивана</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<h3 class="product__title">Missoni</h3>
+
+						<div class="product__wrap-swiper-content">
+							<div class="swiper product__swiper">
+								<div class="swiper-wrapper product__wiper-wrapper">
+									<div class="swiper-slide product__swiper-slide">Slide 1</div>
+									<div class="swiper-slide product__swiper-slide">Slide 2</div>
+									<div class="swiper-slide product__swiper-slide">Slide 3</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination product__pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev product__swiper-button button-prev"
+								></div>
+								<div
+									class="swiper-button-next product__swiper-button button-next"
+								></div>
+							</div>
+						</div>
+
+						<div class="product__content">
+							<p>описание дивана</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<h3 class="product__title">Palermo</h3>
+
+						<div class="product__wrap-swiper-content">
+							<div class="swiper product__swiper">
+								<div class="swiper-wrapper product__wiper-wrapper">
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/palermo1.jpg"
+											alt="Диван Loft Relax"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/palermo2.jpg"
+											alt="Диван Loft Relax"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/palermo3.jpg"
+											alt="Диван Palermo"
+										/>
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination product__pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev product__swiper-button button-prev"
+								></div>
+								<div
+									class="swiper-button-next product__swiper-button button-next"
+								></div>
+							</div>
+						</div>
+
+						<div class="product__content">
+							<p>описание дивана</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<h3 class="product__title">Chester</h3>
+
+						<div class="product__wrap-swiper-content">
+							<div class="swiper product__swiper">
+								<div class="swiper-wrapper product__wiper-wrapper">
+									<div class="swiper-slide product__swiper-slide">Slide 1</div>
+									<div class="swiper-slide product__swiper-slide">Slide 2</div>
+									<div class="swiper-slide product__swiper-slide">Slide 3</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination product__pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev product__swiper-button button-prev"
+								></div>
+								<div
+									class="swiper-button-next product__swiper-button button-next"
+								></div>
+							</div>
+						</div>
+
+						<div class="product__content">
+							<p>описание дивана</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<h3 class="product__title">Pool</h3>
+
+						<div class="product__wrap-swiper-content">
+							<div class="swiper product__swiper">
+								<div class="swiper-wrapper product__wiper-wrapper">
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/pool1.PNG"
+											alt="Диван Pool"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/pool2.PNG"
+											alt="Диван Pool"
+										/>
+									</div>
+									<div class="swiper-slide product__swiper-slide">
+										<img
+											class="product__slide-img"
+											src="img/oldFile/pool3.PNG"
+											alt="Диван Pool"
+										/>
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination product__pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev product__swiper-button button-prev"
+								></div>
+								<div
+									class="swiper-button-next product__swiper-button button-next"
+								></div>
+							</div>
+						</div>
+
+						<div class="product__content">
+							<p>описание дивана</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="product">
-				<div class="container">
-					<h2 class="product__title">Calipso</h2>
-
-					<p>тут добавится слайдер с основными товарами</p>
-					<div class="product__content">
-						<p>описание дивана</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="product">
-				<div class="container">
-					<h2 class="product__title">Palermo</h2>
-
-					<p>тут добавится слайдер с основными товарами</p>
-					<div class="product__content">
-						<p>описание дивана</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="product">
-				<div class="container">
-					<h2 class="product__title">Missoni</h2>
-
-					<p>тут добавится слайдер с основными товарами</p>
-					<div class="product__content">
-						<p>описание дивана</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="product">
-				<div class="container">
-					<h2 class="product__title">Pool</h2>
-
-					<p>тут добавится слайдер с основными товарами</p>
-					<div class="product__content">
-						<p>описание дивана</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="container">
 					<h2 class="contacts__title">Связаться с нами</h2>
 					<form class="contacts__form form">
-						<label class="form__label" for="name"> Введите имя </label>
-						<input class="form__input" type="text" name="name" placeholder="Например: Иван"/>
+						<div class="form__label-wrap">
+							<label class="form__label" for="name"> Введите имя </label>
+							<input
+								class="form__input"
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Например: Иван"
+							/>
+						</div>
 
-						<label class="form__label" for="phone">
-							Введите номер телефона
-						</label>
-						<input class="form__input" type="tel" name="phone" placeholder="Например: +375(**) 999-99-99"/>
+						<div class="form__label-wrap">
+							<label class="form__label" for="phone">
+								Введите номер телефона
+							</label>
+							<input
+								class="form__input"
+								type="tel"
+								id="phone"
+								name="phone"
+								placeholder="Например: +375(**) 999-99-99"
+							/>
+						</div>
 
 						<button class="form__submit" type="submit">
 							Заказать обратный звонок
@@ -142,39 +424,42 @@
 					</form>
 				</div>
 			</section>
-
-			<section class="pay">
-				<h2 class="pay__title">
-					НЕ ЗНАЮ ЧТО В БЛОК ДОСТАВКИ ПИХАТЬ ПО ИНФОРМАЦИИ ЛИБО КАК МЫ ЕГО МОЖЕМ
-					НАЗВАТЬ ???
-				</h2>
-			</section>
 		</main>
 
 		<footer class="footer">
 			<div class="container footer__container">
-				<div class="footer__wrap-logo">
-					<img class="footer__log" src="" alt="Логотип компании" />
-				</div>
-
 				<address class="footer__contacts">
-					<a href="" class="footer__item footer__link">номер телефона</a>
-					<a href="" class="footer__item footer__link">email адрес</a>
+					<a href="tel:375297033238" class="footer__item footer__link">
+						+375(29) 703 32 38
+					</a>
+					<a
+						href="mailto:b.ars-expa@yandex.ru"
+						class="footer__item footer__link"
+					>
+						b.ars-expa@yandex.ru
+					</a>
 				</address>
 
-				<ul class="footer__list-social">
-					<li class="footer__item-social">
-						<a href="" class="footer__link footer__link_social"
-							>социальные сети добавлю сколько надо будет</a
-						>
-					</li>
-				</ul>
+				<div class="footer__lists">
+					<ul class="footer__list-social">
+						<li class="footer__item-social">
+							<a href="" class="footer__link footer__link_social">
+								социальные сети добавлю сколько надо будет
+							</a>
+						</li>
+					</ul>
 
-				<ul class="footer__list-info">
-					<li class="footer__item">ИП Иванов Макар Макарович ???</li>
-					<li class="footer__item">УНП ???</li>
-					<li class="footer__item">ОГРНИП ???</li>
-				</ul>
+					<ul class="footer__list-info">
+						<li class="footer__item">ЧУП «БАРС ЭКСПО»</li>
+						<li class="footer__item">УНП 692067290</li>
+					</ul>
+				</div>
+
+				<img
+					class="footer__logo"
+					src="img/logoWhite.svg"
+					alt="Логотип компании Барс Мебель"
+				/>
 			</div>
 		</footer>
 	</body>

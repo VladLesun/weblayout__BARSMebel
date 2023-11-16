@@ -1,0 +1,10 @@
+.about {
+	padding: 100px 0 80px;
+}
+.about__title {
+	font-size: 70px;
+	margin-bottom: 30px;
+}
+.about__descr {
+  max-width: 600px;
+}

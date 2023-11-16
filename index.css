@@ -1,1 +1,11 @@
 @import 'styles/normalize.css';
+@import 'styles/swiper.min.css';
+@import 'styles/fonts.css';
+@import 'styles/default.css';
+@import 'styles/header.css';
+@import 'styles/hero.css';
+@import 'styles/about.css';
+@import 'styles/products.css';
+@import 'styles/product.css';
+@import 'styles/contacts.css';
+@import 'styles/footer.css';

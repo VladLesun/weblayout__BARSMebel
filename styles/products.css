@@ -1,0 +1,10 @@
+.products {
+  position: relative;
+	padding: 20px 0 50px;
+  background-color: #E5E4E2;
+}
+
+.products__title {
+	font-size: 70px;
+  margin-bottom: 50px;
+}

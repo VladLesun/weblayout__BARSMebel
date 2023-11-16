@@ -1,0 +1,65 @@
+/* 
+  !Шрифт Playfair Display без засечек 
+*/
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('../fonts/PlayfairDisplayRegular.woff2') format('woff2'),
+		url('../fonts/PlayfairDisplayRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('../fonts/PlayfairDisplayBold.woff2') format('woff2'),
+		url('../fonts/PlayfairDisplayBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* 
+  !Шрифт Playfair DisplaySC с засечками
+*/
+
+@font-face {
+	font-family: 'PlayfairDisplaySC';
+	src: url('../fonts/PlayfairDisplaySCRegular.woff2') format('woff2'),
+		url('../fonts/PlayfairDisplaySCRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplaySC';
+	src: url('../fonts/PlayfairDisplaySCBold.woff2') format('woff2'),
+		url('../fonts/PlayfairDisplaySCBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* 
+  !Шрифт Montserrat
+*/
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/MontserratRegular.woff2') format('woff2'),
+		url('../fonts/MontserratRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/MontserratBold.woff2') format('woff2'),
+		url('../fonts/MontserratBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

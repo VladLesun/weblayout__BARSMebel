@@ -1,0 +1,42 @@
+.contacts {
+	padding: 50px 0;
+}
+
+.contacts__title {
+	font-size: 70px;
+	margin-bottom: 50px;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px 20px;
+}
+
+.form__label-wrap {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+
+.form__label {
+	font-size: 16px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+.form__input {
+	width: 100%;
+	padding: 10px 0 10px 15px;
+	border: 1px solid var(--main-color);
+	border-radius: 30px;
+}
+
+.form__submit {
+	padding: 20px;
+	border: 1px solid var(--main-color);
+	border-radius: 30px;
+	background-color: transparent;
+}
