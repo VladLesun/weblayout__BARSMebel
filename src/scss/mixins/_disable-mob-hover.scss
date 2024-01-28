@@ -1,0 +1,15 @@
+@mixin hover {
+	@media (any-hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+@mixin focus {
+	@media (any-hover: hover) {
+		&:focus:not(:hover) {
+			@content;
+		}
+	}
+}
