@@ -1,5 +1,5 @@
 .footer {
-	padding: 50px 0;
+	padding: 40px 0;
 	background-color: var(--second-bg);
 	color: var(--second-color);
 	&__container {
@@ -17,7 +17,7 @@
 	}
 	&__item {
 		font-size: 28px;
-		transition: color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 		&::after {
 			display: block;
 			content: '';
@@ -29,23 +29,17 @@
 		&-mail {
 			@include hover {
 				color: #0088cc;
-			}
-			@include focus {
-				color: #0088cc;
 				&::after {
 					width: 100%;
 					background-color: #0088cc;
 				}
 			}
 			&:active {
-				color: #0088cc;
+				transform: scale(0.9);
 			}
 		}
 		&-phone {
 			@include hover {
-				color: #25d366;
-			}
-			@include focus {
 				color: #25d366;
 				&::after {
 					width: 100%;
@@ -53,7 +47,7 @@
 				}
 			}
 			&:active {
-				color: #25d366;
+				transform: scale(0.9);
 			}
 		}
 	}
@@ -154,12 +148,11 @@
 
 @include tablet {
 	.footer {
+		padding: 20px 0;
 		&__item {
 			font-size: 18px;
 		}
 		&__social {
-			&-more {
-			}
 			&-list {
 				max-width: 200px;
 				gap: 40px;
@@ -180,7 +173,6 @@
 
 @include mobile {
 	.footer {
-		padding: 15px 0;
 		&__container {
 			display: grid;
 			grid-template-columns: 1fr;

@@ -1,5 +1,5 @@
 .installment {
-	padding: 50px 0;
+	padding: 40px 0;
 	&__descr {
 		text-align: center;
 		font-size: 28px;
@@ -15,11 +15,12 @@
 		align-items: center;
 		justify-content: flex-start;
 		gap: 20px;
+		&-svg {
+			flex: 1 0 150px;
+			width: 150px;
+		}
 	}
-	&__svg {
-		flex: 1 0 150px;
-		width: 150px;
-	}
+
 	&__content-descr {
 		text-align: start;
 		max-width: 500px;
@@ -43,6 +44,7 @@
 
 @include tablet {
 	.installment {
+		padding: 20px 0;
 		&__descr {
 			font-size: 20px;
 		}

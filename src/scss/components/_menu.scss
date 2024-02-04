@@ -22,14 +22,11 @@
 				width: 100%;
 			}
 		}
-		@include focus {
-			color: var(--main-color);
-			&::after {
-				width: 100%;
-			}
-		}
 		&:active {
 			color: #9b9b9b;
+			&::after {
+				background-color: #9b9b9b;
+			}
 		}
 	}
 	&__link_text::after {

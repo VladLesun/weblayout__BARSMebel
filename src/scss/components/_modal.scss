@@ -1,0 +1,158 @@
+.modal {
+	display: flex;
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	overflow-y: auto;
+	z-index: 15;
+	animation: fade linear 0.3s forwards;
+	&__overlay {
+		position: relative;
+		width: 100%;
+		max-width: 600px;
+		min-height: 300px;
+		cursor: default;
+		background-color: #fff;
+		margin: auto;
+		color: var(--main-color);
+		padding: 25px 15px;
+		animation: is-open-modal ease 0.5s forwards;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		color: black;
+	}
+	&__img {
+		width: 120px;
+		height: 120px;
+		background: center/contain no-repeat;
+		background-image: url('../img/done.webp'), url('../img/done.png');
+	}
+	&__title {
+		position: relative;
+		text-align: center;
+		font-size: 24px;
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: black;
+		}
+	}
+	&__text {
+		text-align: center;
+		font-size: 18px;
+	}
+	&__btn {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		color: black;
+		top: 5px;
+		right: 5px;
+	}
+	&__svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@include laptop-L {
+	.modal {
+		&__img {
+			margin-top: 30px;
+		}
+		&__title {
+			font-size: 45px;
+		}
+		&__text {
+			font-size: 30px;
+		}
+		&__btn {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+@include laptop {
+	.modal {
+		&__overlay {
+			max-width: 550px;
+			min-height: 400px;
+		}
+		&__container {
+			gap: 25px;
+		}
+		&__img {
+			margin-top: 40px;
+			width: 100px;
+			height: 100px;
+		}
+		&__title {
+			font-size: 45px;
+		}
+		&__text {
+			font-size: 25px;
+		}
+		&__btn {
+			top: 10px;
+			right: 10px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+@include tablet {
+	.modal {
+		&__overlay {
+			max-width: 550px;
+		}
+		&__title {
+			font-size: 35px;
+		}
+		&__text {
+			font-size: 20px;
+		}
+		&__btn {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+@include mobile {
+	.modal {
+		&__overlay {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes is-open-modal {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}

@@ -1,5 +1,5 @@
 .products {
-	padding: 20px 0 50px;
+	padding: 40px 0;
 	.product {
 		&:not(:last-child) {
 			margin-bottom: 30px;
@@ -58,7 +58,7 @@
 			height: 50px;
 			border-radius: 6px;
 			outline: none;
-			transition: background-color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, transform 0.3s linear;
 			&.swiper-button-prev::after,
 			&.swiper-button-next::after {
 				display: none;
@@ -66,16 +66,19 @@
 			&.button-prev {
 				left: -10px;
 				transform: translateY(-50%);
+				&:active {
+					transform: translateY(-50%) scale(0.9);
+				}
 			}
 			&.button-next {
 				transform: translateY(-50%) rotate(180deg);
 				right: -10px;
+				&:active {
+					transform: translateY(-50%) rotate(180deg) scale(0.9);
+				}
 			}
 			@include hover {
 				background-color: rgba(0, 0, 0, 0.2);
-			}
-			&:active {
-				background-color: rgba(0, 0, 0, 0.3);
 			}
 		}
 		&__content {
@@ -98,9 +101,9 @@
 		&__link {
 			padding: 15px 20px;
 			border: 2px solid var(--main-color);
-			background-color: var(--main-bg);
 			border-radius: 30px;
-			transition-property: background-color, border-color, color;
+			font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+			transition-property: background-color, border-color, color, transform;
 			transition-duration: 0.2s;
 			transition-timing-function: ease-in-out;
 			@include hover {
@@ -109,10 +112,14 @@
 				color: var(--second-color);
 			}
 			&:active {
-				border-color: var(--main-bg);
-				background-color: var(--second-bg);
-				color: var(--second-color);
+				transform: scale(0.9);
 			}
+		}
+		&__review {
+			background-color: var(--btn-video-review);
+		}
+		&__consultation {
+			background-color: var(--btn-consultation);
 		}
 		&__pagination {
 			bottom: 10px;
@@ -128,7 +135,7 @@
 	margin: 0 3px;
 	background-color: #fff;
 	border: 1px solid var(--main-color);
-	border-radius: 0;
+	border-radius: 3px;
 	outline: none;
 	transition: box-shadow 0.2s ease-in-out;
 	@include hover {
@@ -141,19 +148,21 @@
 }
 
 @include laptop-L {
-	.product {
-		&__buttons {
-			gap: 10px;
-		}
-		&__link {
-			padding: 15px;
+	.products {
+		.product {
+			&__buttons {
+				gap: 10px;
+			}
+			&__link {
+				padding: 15px;
+			}
 		}
 	}
 }
 
 @include laptop {
 	.products {
-		padding: 20px 0 50px;
+		padding: 30px 0;
 		.product {
 			&__title {
 				font-size: 30px;
@@ -183,6 +192,7 @@
 	}
 
 	.swiper-pagination-bullet {
+		border-radius: 8px;
 		width: 25px;
 		height: 25px;
 	}
@@ -190,7 +200,7 @@
 
 @include tablet {
 	.products {
-		padding: 30px 0 40px;
+		padding: 20px 0;
 		.product {
 			&__title {
 				font-size: 24px;
@@ -199,6 +209,9 @@
 			&__swiper {
 				padding: 10px 0 50px;
 				margin-bottom: 10px;
+			}
+			&__pagination {
+				bottom: 0;
 			}
 			&__content {
 				flex-direction: column;
@@ -221,7 +234,7 @@
 
 @include mobile {
 	.products {
-		padding: 20px 0 15px;
+		padding: 15px 0;
 		.product {
 			&__buttons {
 				gap: 10px;

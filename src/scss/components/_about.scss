@@ -1,15 +1,19 @@
 .about {
-	padding: 100px 0 80px;
+	padding: 80px 0 40px;
+	text-align: center;
+	&__title {
+		margin-bottom: 15px;
+	}
 	&__descr {
-		max-width: 650px;
+		margin: 0 auto;
+		width: 100%;
 		font-size: 28px;
 	}
 }
 @include laptop {
 	.about {
-		padding: 80px 0;
+		padding: 60px 0 30px;
 		&__descr {
-			max-width: 750px;
 			font-size: 24px;
 		}
 	}
@@ -17,9 +21,11 @@
 
 @include tablet {
 	.about {
-		padding: 50px 0;
+		padding: 30px 0 20px;
+		&__title {
+			margin-bottom: 5px;
+		}
 		&__descr {
-			max-width: 550px;
 			font-size: 20px;
 		}
 	}
@@ -27,9 +33,8 @@
 
 @include mobile {
 	.about {
-		padding: 30px 0;
+		padding: 30px 0 15px;
 		&__descr {
-			text-align: center;
 			font-size: 18px;
 		}
 	}

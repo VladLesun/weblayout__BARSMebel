@@ -5,11 +5,3 @@
 		}
 	}
 }
-
-@mixin focus {
-	@media (any-hover: hover) {
-		&:focus:not(:hover) {
-			@content;
-		}
-	}
-}

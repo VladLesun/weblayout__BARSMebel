@@ -1,14 +1,16 @@
 import { transferLinks } from './functions/transitionLinks';
 import { setBurger } from './functions/burger';
 import { swiper } from './functions/swiper';
-import { sendForm } from './functions/sendForm';
 import 'lazysizes';
-import { resize } from './functions/video';
+import { validationForm } from './functions/validationForm';
+import { sendLead } from './functions/sendLead';
 
 function init() {
+	document.querySelector('body').addEventListener('touchstart', () => {});
 	const links = document.querySelectorAll('.transfer-link');
 	const allSwipers = document.querySelectorAll('.product__swiper');
 	const form = document.querySelector('.form');
+	const validate = validationForm(form);
 
 	transferLinks(links);
 	setBurger({
@@ -21,7 +23,16 @@ function init() {
 		hiddenBody: 'body-hidden', // класс для остановки свайпа body
 	});
 	swiper(allSwipers);
-	sendForm(form);
+
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+
+		if (!validate.isValid) {
+			return;
+		}
+
+		sendLead(form);
+	});
 }
 
 init();
