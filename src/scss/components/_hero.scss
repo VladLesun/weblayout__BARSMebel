@@ -24,7 +24,7 @@
 		font-size: 120px;
 		margin-bottom: 20px;
 		text-align: center;
-		font-family: 'Montserrat-Semibold';
+		font-family: 'Montserrat-Semibold', Arial, Helvetica, sans-serif;
 		font-weight: 600;
 	}
 	&__descr {
@@ -32,7 +32,7 @@
 		font-size: 50px;
 		margin-bottom: 50px;
 		text-align: center;
-		font-family: 'Montserrat-Medium';
+		font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
 		font-weight: 500;
 	}
 	&__link {
@@ -49,15 +49,10 @@
 			background-color: var(--main-bg);
 			color: var(--main-color);
 		}
-		@include focus {
-			border-color: transparent;
-			background-color: var(--main-bg);
-			color: var(--main-color);
-		}
 		&:active {
 			border-color: transparent;
 			background-color: #a45214;
-			color: #28241d;
+			color: var(--second-color);
 		}
 	}
 	&__video {
@@ -75,6 +70,7 @@
 			center/cover no-repeat;
 	}
 }
+
 @include laptop-L {
 	.hero {
 		&__descr {

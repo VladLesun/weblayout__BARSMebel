@@ -1,5 +1,5 @@
 .contacts {
-	padding: 50px 0;
+	padding: 40px 0;
 	&__error {
 		display: flex;
 		flex-direction: column;
@@ -46,7 +46,7 @@
 		border-radius: 30px;
 		background-color: transparent;
 		color: var(--main-color);
-		transition-property: background-color, border-color, color;
+		transition-property: background-color, border-color, color, transform;
 		transition-duration: 0.2s;
 		transition-timing-function: ease-in-out;
 		@include hover {
@@ -54,15 +54,8 @@
 			background-color: var(--second-bg);
 			color: var(--second-color);
 		}
-		@include focus {
-			border-color: var(--main-bg);
-			background-color: rgba(0, 0, 0, 0.7);
-			color: var(--second-color);
-		}
 		&:active {
-			border-color: var(--main-bg);
-			background-color: rgba(0, 0, 0, 0.7);
-			color: var(--second-color);
+			transform: scale(0.9);
 		}
 	}
 }
@@ -72,8 +65,6 @@
 }
 
 @include laptop-L {
-}
-@media (max-width: 1200px) {
 	.form {
 		align-items: center;
 		gap: 20px;
@@ -91,6 +82,7 @@
 
 @include tablet {
 	.contacts {
+		padding: 20px 0;
 		&__error {
 			align-items: flex-start;
 			font-size: 16px;
