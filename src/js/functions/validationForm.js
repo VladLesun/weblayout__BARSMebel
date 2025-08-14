@@ -1,9 +1,9 @@
+import Inputmask from 'inputmask/lib/inputmask.js';
 import JustValidate from 'just-validate';
-import inputmask from 'inputmask/bundle';
 
 export function validationForm(form) {
-	const inputTel = document.querySelector("input[type='tel']");
-	const im = new inputmask('+375(99) 999-99-99');
+	const inputTel = document.getElementById('tel');
+	const im = new Inputmask('+375(99)999-99-99');
 
 	im.mask(inputTel);
 
@@ -37,7 +37,7 @@ export function validationForm(form) {
 				errorMessage: 'Введите ваше имя корректно',
 			},
 		])
-		.addField('#phone', [
+		.addField('#tel', [
 			{
 				rule: 'required',
 				errorMessage: 'Введите Ваш моб. телефон',
@@ -45,7 +45,7 @@ export function validationForm(form) {
 			{
 				validator: () => {
 					const phone = inputTel.inputmask.unmaskedvalue();
-					return !!Number(phone) && phone.length === 9;
+					return Boolean(Number(phone) && phone.length === 9);
 				},
 				errorMessage: 'Здесь должно быть 9 символов без +375',
 			},
